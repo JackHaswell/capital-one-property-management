@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leave a Review | Capital One Property Management</title>
+  <meta name="description" content="Share your experience of Capital One Property Management. Your review goes to our team and, once approved, appears on our website." />
+  <meta name="robots" content="noindex" />
+  <meta property="og:title" content="Leave a Review | Capital One Property Management" />
+  <meta property="og:description" content="Tell us how we're doing — your feedback means a lot." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scrollbar" id="scrollbar" aria-hidden="true"></div>
+
+  <div class="utilbar">
+    <div class="container utilbar__inner">
+      <div class="utilbar__contact">
+        <a href="tel:+447516706220" class="utilbar__item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1z"/></svg><span>07516 706220</span></a>
+        <a href="mailto:info@capitalonepropertymanagement.co.uk" class="utilbar__item utilbar__item--email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7L4 7v1l8 5 8-5V7z"/></svg><span>info@capitalonepropertymanagement.co.uk</span></a>
+      </div>
+      <div class="utilbar__badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3zm-1 14-4-4 1.4-1.4L11 13.2l4.6-4.6L17 10l-6 6z"/></svg><span>Client money protected &middot; Government-approved schemes</span></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Capital One Property Management home">
+        <span class="brand__name">Capital One</span>
+        <span class="brand__sub"><i class="brand__diamond" aria-hidden="true"></i>Property Management</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="landlords.html" class="nav__link">Landlords</a>
+        <a href="tenants.html" class="nav__link">Tenants</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="careers.html" class="nav__link">Careers</a>
+        <a href="contact.html" class="btn btn--primary nav__cta">Free valuation</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- PAGE HERO -->
+    <section class="pagehero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container pagehero__inner reveal">
+        <span class="eyebrow" id="rvEyebrow">Your feedback</span>
+        <h1>Leave us a <span class="grad-text">review</span></h1>
+        <p id="rvIntro">Thank you for taking a moment to tell us how we're doing. Your review goes straight to our team and, once we've approved it, it appears on our website.</p>
+      </div>
+    </section>
+
+    <!-- REVIEW FORM -->
+    <section class="section" style="padding-top:28px">
+      <div class="container container--narrow">
+        <form class="contact__form glass reviewform" id="reviewForm" novalidate
+              data-ok="Thank you so much — your review has been sent to our team. Once we've approved it, it'll appear on our website."
+              data-sent="✓ Review sent">
+          <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="field">
+            <span class="field__legend">I'm a…</span>
+            <div class="segmented" id="reviewType" role="radiogroup" aria-label="Are you a landlord or a tenant?">
+              <label><input type="radio" name="type" value="Landlord" required /><span>Landlord</span></label>
+              <label><input type="radio" name="type" value="Tenant" /><span>Tenant</span></label>
+            </div>
+          </div>
+
+          <div class="field">
+            <span class="field__legend">Your rating</span>
+            <div class="rating" id="reviewRating" role="radiogroup" aria-label="Star rating, 1 to 5">
+              <input type="radio" id="star5" name="rating" value="5" required /><label for="star5" title="Excellent" aria-label="5 stars">★</label>
+              <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Great" aria-label="4 stars">★</label>
+              <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good" aria-label="3 stars">★</label>
+              <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Okay" aria-label="2 stars">★</label>
+              <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Poor" aria-label="1 star">★</label>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field"><label for="rv-name">Your name</label><input type="text" id="rv-name" name="name" autocomplete="name" required /></div>
+            <div class="field"><label for="rv-area">Area / town</label><input type="text" id="rv-area" name="area" placeholder="e.g. Stockton" required /></div>
+          </div>
+
+          <div class="field"><label for="rv-review">Your review</label><textarea id="rv-review" name="review" rows="6" placeholder="Tell us about your experience with us…" required></textarea></div>
+
+          <label class="field-check" id="rv-consent-wrap">
+            <input type="checkbox" name="consent" value="Yes — happy for this review to be published" required />
+            <span>I'm happy for Capital One Property Management to publish this review — showing my first name and area — on their website.</span>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Submit my review</button>
+          <p class="quickform__note" id="formStatus" role="status"></p>
+          <p class="quickform__note">We'll only ever show your first name and area — never your full name, contact details or any other information.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="brand brand--light"><span class="brand__name">Capital One</span><span class="brand__sub"><i class="brand__diamond" aria-hidden="true"></i>Property Management</span></a>
+        <p>Professional lettings and property management for landlords across the North East.</p>
+        <p class="footer__group">Part of the Capital One Property Group &middot; <a href="https://capitalonepropertypartners.com" target="_blank" rel="noopener">Capital One Property Partners ↗</a></p>
+        <a href="contact.html" class="btn btn--ghost btn--light">Get a free valuation</a>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a><a href="landlords.html">Landlords</a><a href="tenants.html">Tenants</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="careers.html">Careers</a>
+      </nav>
+      <div class="footer__legal-block">
+        <h4>Regulated &amp; protected</h4>
+        <ul>
+          <li>Property Redress Scheme — member no. <strong>PRS056972</strong></li>
+          <li>Client Money Protect — member no. <strong>CMP015352</strong></li>
+          <li>Tenancy Deposit Scheme</li>
+          <li>ICO registered — ref. <strong>ZC090309</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <p>&copy; <span id="year">2026</span> Capital One Property Management Ltd &middot; Registered in England &amp; Wales, company no. 16183649 &middot; VAT no. 487 574 237 &middot; Registered office: 23 Stafford Drive, Littleover, Derby, DE23 3WG.</p>
+        <a class="footer__bar-link" href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="totop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 8l-6 6 1.4 1.4L12 10.8l4.6 4.6L18 14z"/></svg></button>
+  <script src="assets/js/script.js" defer></script>
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6f27f453384b4929b04c7656e45aa6ba"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
