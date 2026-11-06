@@ -14,6 +14,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    /* Tenants — enhanced property cards */
+    .property__price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .property__price-from { color: var(--muted); font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; align-self: center; }
+    .property__price-amt { font-family: 'Plus Jakarta Sans', 'Inter', sans-serif; font-weight: 800; font-size: 1.55rem; color: var(--navy); line-height: 1; }
+    .property__price-per { color: var(--muted); font-size: .9rem; font-weight: 600; }
+    .property__desc { color: var(--muted); font-size: .92rem; line-height: 1.6; margin: 13px 0 16px; }
+    .property__facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; }
+    .property__fact { display: inline-flex; align-items: center; gap: 6px; background: var(--bg-alt); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: .78rem; font-weight: 600; color: var(--navy); }
+    .property__fact svg { width: 14px; height: 14px; fill: var(--blue); flex: none; }
+    .property__fact--bills { background: #eafaf3; border-color: #bfe9d6; color: #0b6b47; }
+    .property__fact--bills svg { fill: #1aa472; }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -82,7 +95,14 @@
             <div class="property__body">
               <h3 class="property__addr">9 Kilwick Street</h3>
               <p class="property__area"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Hartlepool</p>
-              <p class="property__note">Brand new to the market — just refurbished and now onboarding new tenants.</p>
+              <div class="property__price"><span class="property__price-from">From</span><span class="property__price-amt">£550</span><span class="property__price-per">pcm</span></div>
+              <p class="property__desc">Brand-new, fully refurbished house share minutes from Hartlepool town centre and the railway station. Every room is a furnished double with its own private en-suite, a smart TV, a proper work desk and plenty of storage — move-in ready, with nothing to sort out.</p>
+              <div class="property__facts">
+                <span class="property__fact property__fact--bills"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>All bills included</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Private en-suite</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>Deposit £200</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 5.6L20 9l-4.3 3.9L17 19l-5-3-5 3 1.3-6.1L4 9l5.6-1.4z"/></svg>Brand new</span>
+              </div>
               <a class="btn btn--primary btn--block property__cta" href="#register" data-property="9 Kilwick Street">Enquire now</a>
             </div>
           </article>
@@ -96,7 +116,14 @@
             <div class="property__body">
               <h3 class="property__addr">8 Station Road</h3>
               <p class="property__area"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Darlington, DL3 6SY</p>
-              <p class="property__note">One room currently available to let.</p>
+              <div class="property__price"><span class="property__price-amt">£675</span><span class="property__price-per">pcm</span></div>
+              <p class="property__desc">A hotel-style room in a beautifully refurbished house share, barely a minute's walk from North Road station. You get your own private en-suite and a private kitchenette, plus a smart TV and dedicated work space — with parking right outside.</p>
+              <div class="property__facts">
+                <span class="property__fact property__fact--bills"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>All bills included</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>En-suite + kitchenette</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>Deposit £300</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>1 min to station</span>
+              </div>
               <a class="btn btn--primary btn--block property__cta" href="#register" data-property="8 Station Road">Enquire about this room</a>
             </div>
           </article>
@@ -110,36 +137,57 @@
             <div class="property__body">
               <h3 class="property__addr">23 Kilwick Street</h3>
               <p class="property__area"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Hartlepool, TS24 7QG</p>
-              <p class="property__note">One room currently available to let.</p>
+              <div class="property__price"><span class="property__price-amt">£575</span><span class="property__price-per">pcm</span></div>
+              <p class="property__desc">The last room in a brand-new, high-spec house share close to York Road, the town centre and the University Hospital of Hartlepool — ideal for NHS staff, professionals and contractors. A furnished double with its own private en-suite, smart TV and blackout blinds.</p>
+              <div class="property__facts">
+                <span class="property__fact property__fact--bills"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>All bills included</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Private en-suite</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>Deposit £200</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Near the hospital</span>
+              </div>
               <a class="btn btn--primary btn--block property__cta" href="#register" data-property="23 Kilwick Street">Enquire about this room</a>
             </div>
           </article>
 
-          <article class="property property--let reveal">
+          <article class="property reveal">
             <button class="property__media" data-gallery="assets/img/prop-alderson-1.jpg,assets/img/prop-alderson-2.jpg,assets/img/prop-alderson-3.jpg,assets/img/prop-alderson-4.jpg,assets/img/prop-alderson-5.jpg,assets/img/prop-alderson-6.jpg,assets/img/prop-alderson-7.jpg" aria-label="View 7 photos of 33 Alderson Street">
               <img src="assets/img/prop-alderson-1.jpg" alt="A spacious furnished bedroom at 33 Alderson Street, Hartlepool, with a cream geometric panelled feature wall, navy bed and seating area" loading="lazy" />
-              <span class="property__status property__status--let">Fully tenanted</span>
+              <span class="property__status property__status--available">1 room available</span>
               <span class="property__count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 7.17 5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.17L15 3H9zm3 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>7 photos</span>
             </button>
             <div class="property__body">
               <h3 class="property__addr">33 Alderson Street</h3>
               <p class="property__area"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Hartlepool, TS26 9HA</p>
-              <p class="property__note">Fully tenanted right now — register to hear when a room comes up.</p>
-              <a class="btn btn--ghost btn--block property__cta" href="#register" data-property="33 Alderson Street">Register for availability</a>
+              <div class="property__price"><span class="property__price-from">From</span><span class="property__price-amt">£560</span><span class="property__price-per">pcm</span></div>
+              <p class="property__desc">A premium en-suite room in a fully refurbished professional house share, an easy walk from Hartlepool town centre. Your furnished double has its own private en-suite, a smart TV, blackout blinds and a work desk, in a quiet, professional household.</p>
+              <div class="property__facts">
+                <span class="property__fact property__fact--bills"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>All bills included</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>Private en-suite</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>Deposit £200</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H8v1a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7zm2.2-1h9.6l-.9-3H8.1l-.9 3zM7.5 14.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>Parking</span>
+              </div>
+              <a class="btn btn--primary btn--block property__cta" href="#register" data-property="33 Alderson Street">Enquire about this room</a>
             </div>
           </article>
 
-          <article class="property property--let reveal">
+          <article class="property reveal">
             <button class="property__media" data-gallery="assets/img/prop-high-northgate-3.jpg,assets/img/prop-high-northgate-1.jpg,assets/img/prop-high-northgate-2.jpg,assets/img/prop-high-northgate-4.jpg,assets/img/prop-high-northgate-5.jpg,assets/img/prop-high-northgate-6.jpg,assets/img/prop-high-northgate-7.jpg,assets/img/prop-high-northgate-8.jpg" aria-label="View 8 photos of 100-104 High Northgate">
               <img src="assets/img/prop-high-northgate-3.jpg" alt="A furnished open-plan studio at 100 High Northgate, Darlington, with a burgundy feature wall, LED strip lighting, double bed, sofa, kitchen and dining area" loading="lazy" />
-              <span class="property__status property__status--let">Fully tenanted</span>
+              <span class="property__status property__status--available">1 room available</span>
               <span class="property__count"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3 7.17 5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.17L15 3H9zm3 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>8 photos</span>
             </button>
             <div class="property__body">
               <h3 class="property__addr">100 High Northgate</h3>
               <p class="property__area"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Darlington, DL1 1UR</p>
-              <p class="property__note">Fully tenanted right now — register to hear when a room comes up.</p>
-              <a class="btn btn--ghost btn--block property__cta" href="#register" data-property="100 High Northgate">Register for availability</a>
+              <div class="property__price"><span class="property__price-amt">£700</span><span class="property__price-per">pcm</span></div>
+              <p class="property__desc">A high-spec room in a smart, modern development just two minutes' walk from North Road station. Choose a private en-suite room with its own tea station, or a self-contained studio — both finished beautifully with a smart TV and work space.</p>
+              <div class="property__facts">
+                <span class="property__fact property__fact--bills"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>All bills included</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg>En-suite or studio</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>Deposit £300</span>
+                <span class="property__fact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>2 min to station</span>
+              </div>
+              <a class="btn btn--primary btn--block property__cta" href="#register" data-property="100 High Northgate">Enquire about this room</a>
             </div>
           </article>
 
